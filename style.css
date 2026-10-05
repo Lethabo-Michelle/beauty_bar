@@ -11,7 +11,11 @@
   overflow: scroll;
   white-space: nowrap;
   padding-block: 0.5rem;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+  overflow-x: auto;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .status {
@@ -26,7 +30,7 @@ h1 {
 }
 
 nav {
-  background-color: #f5a7de;
+  background-color: #f5a7e9;
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
@@ -79,5 +83,16 @@ h2 {
   img {
     width: 100%;
     border-radius: 1rem;
+  }
+}
+
+.services {
+  padding-inline: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 6rem;
+
+  ul {
+    padding-left: 1rem;
   }
 }
