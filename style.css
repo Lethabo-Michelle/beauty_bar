@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+}
+
+.scrollGallery {
+  background-color: #f5a7de;
+  overflow: auto;
+  white-space: nowrap;
+  padding-block: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #f283e1 #f8c1db;
+}
+
+.status {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 6rem;
+}
