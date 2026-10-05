@@ -1,20 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rosarivo:ital@0;1&display=swap");
+
 * {
   margin: 0;
+  background-color: #f8e8f3;
+  font-family: "Rosarivo", cursive;
 }
 
 .scrollGallery {
   background-color: #f5a7de;
-  overflow: auto;
+  overflow: scroll;
   white-space: nowrap;
   padding-block: 0.5rem;
-  scrollbar-width: thin;
-  scrollbar-color: #f283e1 #f8c1db;
+  overflow-y: hidden;
 }
 
 .status {
-  width: 7rem;
-  height: 7rem;
+  height: 4rem;
   border-radius: 50%;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
 }
 
 nav {
@@ -33,12 +41,43 @@ a {
   align-items: center;
   text-decoration: none;
   color: white;
+  background-color: transparent;
 }
 
 a:hover {
   color: #540348;
+  opacity: 0.4;
 }
 
 ion-icon {
   font-size: 1.5rem;
+  background-color: transparent;
+}
+
+.heroImg {
+  height: 15rem;
+  width: 100%;
+}
+
+h2 {
+  padding: 0.5rem 1rem;
+}
+
+.info {
+  display: flex;
+  height: 10rem;
+  align-content: center;
+  overflow: hidden;
+  padding-inline: 1rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+
+  p {
+    width: 80%;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 1rem;
+  }
 }
